@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/logo-eduvista.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>EduVista</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(window).on('scroll', function () {
+			if ($(window).scrollTop()) {
+				$('nav').addClass('black');
+			} else {
+				$('nav').removeClass('black');
+			}
+		})
+	</script>
+</head>
+
+<body>
+	<!-- Navigation Bar -->
+	<header id="header">
+		<nav>
+			<div class="logo"><img src="images/icon/logo-eduvista.png" alt="logo"></div>
+			<ul>
+				<li><a class="active" href="">Home</a></li>
+				<li><a href="#courses_section">Courses</a></li>
+				<li><a href="#live_classes">Live Classes</a></li>
+				<li><a href="#quiz_section">Quizzes</a></li>
+				<li><a href="#discussion_section">Discussion</a></li>
+			</ul>
+			<div class="srch"><input type="text" class="search" placeholder="Search here..."><img
+					src="images/icon/search.png" alt="search" onclick=slide()></div>
+			<a class="get-started" href="login.html">Get Started</a>
+			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+		<div class="head-container">
+			<div class="quote">
+				<p>The beautiful thing about learning is that nobody can take it away from you</p>
+				<h5>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values,
+					beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and
+					directed research!</h5>
+			</div>
+			<div class="svg-image">
+				<img src="images/extra/svg1.jpg" alt="svg">
+			</div>
+		</div>
+		<div class="side-menu" id="side-menu">
+			<div class="close" onclick="sideMenu(1)"><img src="images/icon/close.png" alt=""></div>
+			<div class="user">
+				<img src="images/creator/roshan.jpeg" alt="Username">
+				<p>roshank9419</p>
+			</div>
+			<ul>
+				<li><a href="#about_section">About</a></li>
+				<li><a href="#courses_section">Courses</a></li>
+				<li><a href="#live_classes">Live Classes</a></li>
+				<li><a href="#quiz_section">Services</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+				<li><a href="#feedBACK">Feedback</a></li>
+			</ul>
+		</div>
+	</header>
+
+
+	<!-- Courses -->
+	<div class="diffSection" id="courses_section">
+		<center>
+			<p style="font-size: 50px; padding: 100px; padding-bottom: 40px;">Courses</p>
+		</center>
+		<div class="content">
+			<p>
+				We Offer a variety of courses.
+			</p>
+		</div>
+	</div>
+	<div class="service-swipe">
+
+		<a href="subjects/computer_courses.html">
+			<div class="s-card"><img src="images/icon/C.png">
+				<p>C </p>
+			</div>
+		</a>
+		<a href="subjects/jee.html">
+			<div class="s-card"><img src="images/icon/python.png">
+				<p>Python</p>
+			</div>
+		</a>
+		<a href="#">
+			<div class="s-card"><img src="images/icon/c++.png">
+				<p>C++</p>
+			</div>
+		</a>
+		<a href="subjects/jee.html#sample_papers">
+			<div class="s-card"><img src="images/icon/java.jpeg">
+				<p>Java</p>
+			</div>
+		</a>
+		<a href="#">
+			<div class="s-card"><img src="images/icon/go.jpeg">
+				<p>Go</p>
+			</div>
+		</a>
+		<a href="#contactus_section">
+			<div class="s-card"><img src="images/icon/android.png">
+				<p>Android Development</p>
+			</div>
+		</a>
+	</div>
+	<!-- Quizzes -->
+	<div class="diffSection" id="quiz_section">
+		<center>
+			<p style="font-size: 50px; padding: 100px; padding-bottom: 40px;">Quizzes</p>
+		</center>
+		<div class="content">
+			<p>
+				Test your knowledge with our quizzes.
+			</p>
+		</div>
+	</div>
+	<div class="service-swipe">
+		<a href="subjects/computer_courses.html">
+			<div class="s-card"><img src="images/icon/C.png">
+				<p>C Programming</p>
+			</div>
+		</a>
+		<a href="subjects/jee.html">
+			<div class="s-card"><img src="images/icon/c++.png">
+				<p>C++ Programming</p>
+			</div>
+		</a>
+		<a href="subjects/python.html">
+			<div class="s-card"><img src="images/icon/python.png">
+				<p>Python Programming</p>
+			</div>
+		</a>
+		<a href="subjects/java.html">
+			<div class="s-card"><img src="images/icon/java.jpeg">
+				<p>Java Programming</p>
+			</div>
+		</a>
+		<a href="subjects/go.html">
+			<div class="s-card"><img src="images/icon/go.jpeg">
+				<p>Go Programming</p>
+			</div>
+		</a>
+		<a href="subjects/android.html">
+			<div class="s-card"><img src="images/icon/android.png">
+				<p>Android Development</p>
+			</div>
+		</a>
+
+	</div>
+
+	<!-- Live Classes -->
+	<div class="diffSection" id="live_classes">
+		<center>
+			<p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">Join our live Classes</p>
+		</center>
+		<div class="totalcard">
+			<div class="card">
+				<center><img src="images\icon\android.png"></center>
+				<center>
+					<div class="card-title">Android Development</div>
+					<div id="detail">
+						<p>“ Join our hands on project for the android Development with the our android experts. “</p>
+						<div class="duty"></div>
+						<a href="https://youtu.be/eWRd0VIBKIY?si=B5KO0QpyfW1cBHR2" target="_blank"><button
+								class="btn-roshan">Join</button></a>
+					</div>
+				</center>
+			</div>
+			<div class="card">
+				<center><img src="images\icon\web.png"></center>
+				<center>
+					<div class="card-title">Web Development</div>
+					<div id="detail">
+						<p>“ Join our web Development Bootcamp for some hands on session on developiong cool projects“
+						</p>
+						<div class="duty"></div>
+						<a href="https://youtu.be/nu_pCVPKzTk?si=yffBvwFKT3F5VR8W" target="_blank"><button
+								class="btn-akhil">Join</button></a>
+					</div>
+				</center>
+			</div>
+		</div>
+	</div>
+
+	
+	<!-- DISCUSSION SECTION -->
+<div class="diffSection" id="discussion_section" style="padding: 100px; background-color: #f8f8f8;">
+	<center>
+	  <p style="font-size: 50px; padding-bottom: 40px;">Discussion</p>
+	</center>
+	<div class="discussion-content" style="padding: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+	  <div class="discussion-card" style="margin-bottom: 20px; padding: 20px; border-bottom: 1px solid #ddd;">
+		<h3 style="margin-top: 0; font-size: 24px; color: #333;">Understanding Python Functions</h3>
+		<p style="margin: 10px 0; font-size: 16px; color: #666;">Let's discuss how to create and use functions in Python. What are some best practices?</p>
+		<div class="discussion-details" style="margin-top: 10px; font-size: 14px; color: #999;">
+		  <p><strong>Posted by:</strong> John Doe</p>
+		  <p><strong>Date:</strong> June 6, 2024</p>
+		</div>
+		<div class="discussion-replies" style="margin-top: 20px; padding: 10px 20px; background-color: #f9f9f9; border-left: 3px solid #007acc; border-radius: 5px;">
+		  <div class="reply" style="margin-bottom: 10px;">
+			<p style="margin: 5px 0;"><strong style="color: #007acc;">Jane Smith:</strong> A function in Python is defined using the `def` keyword...</p>
+			<p style="margin: 5px 0;"><strong>Date:</strong> June 7, 2024</p>
+		  </div>
+		  <div class="reply" style="margin-bottom: 10px;">
+			<p style="margin: 5px 0;"><strong style="color: #007acc;">Alex Brown:</strong> Remember to use descriptive names for your functions...</p>
+			<p style="margin: 5px 0;"><strong>Date:</strong> June 7, 2024</p>
+		  </div>
+		</div>
+	  </div>
+	  <div class="discussion-card" style="margin-bottom: 20px; padding: 20px; border-bottom: 1px solid #ddd;">
+		<h3 style="margin-top: 0; font-size: 24px; color: #333;">Using List Comprehensions in Python</h3>
+		<p style="margin: 10px 0; font-size: 16px; color: #666;">How do you use list comprehensions effectively in Python?</p>
+		<div class="discussion-details" style="margin-top: 10px; font-size: 14px; color: #999;">
+		  <p><strong>Posted by:</strong> Emily White</p>
+		  <p><strong>Date:</strong> June 5, 2024</p>
+		</div>
+		<div class="discussion-replies" style="margin-top: 20px; padding: 10px 20px; background-color: #f9f9f9; border-left: 3px solid #007acc; border-radius: 5px;">
+		  <div class="reply" style="margin-bottom: 10px;">
+			<p style="margin: 5px 0;"><strong style="color: #007acc;">Chris Green:</strong> List comprehensions are a concise way to create lists...</p>
+			<p style="margin: 5px 0;"><strong>Date:</strong> June 6, 2024</p>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+  
+
+	<!-- Sliding Information -->
+	<marquee style="background: linear-gradient(to right, #FA4B37, #DF2771); margin-top: 50px;" direction="left"
+		onmouseover="this.stop()" onmouseout="this.start()" scrollamount="20">
+		<div class="marqu">“Education is the passport to the future, for tomorrow belongs to those who prepare for it
+			today.” “Your attitude, not your aptitude, will determine your altitude.” “If you think education is
+			expensive, try ignorance.” “The only person who is educated is the one who has learned how to learn …and
+			change.”</div>
+	</marquee>
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+				<img src="images/icon/logo-eduvista.png" style="width: 200px;">
+				<div class="logo"></div>
+				<div class="social-media">
+					<a href="#"><img src="images/icon\fb.png"></a>
+					<a href="#"><img src="images/icon\insta.png"></a>
+					<a href="#"><img src="images/icon\tt.png"></a>
+					<a href="#"><img src="images/icon\ytube.png"></a>
+					<a href="#"><img src="images/icon\linkedin.png"></a>
+				</div><br><br>
+				<p class="rights-text">Copyright © 2024 Created By Kuldeep Tiwari, Keshaw Kumar, Laxmi Yadav and Amita
+					Singh All Rights Reserved.</p>
+				<br>
+				<p><img src="images/icon/location.png"> Sharda University<br>Greater Noida, UP-201310</p>
+				<br>
+				<p><img src="images/icon/phone.png"> +91-1234-567-890<br><img src="images/icon/mail.png">&nbsp;
+					kuldeeptiwari9162@gmail.com</p>
+			</div>
+			<div class="right-col">
+				<h1 style="color: #fff">Our Newsletter</h1>
+				<div class="border"></div><br>
+				<p>Enter Your Email to get our News and updates.</p>
+				<form class="newsletter-form">
+					<input class="txtb" type="email" placeholder="Enter Your Email">
+					<input class="btn" type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>
